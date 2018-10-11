@@ -19,7 +19,8 @@ namespace mobileteam2.Views
 
         private void OpenPayment(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new PaymentsPage());
+            PaymentBtn.Text = "Paid";
+            Deductible.Text = "•Deductible paid on 10/12/18";
         }
     }
 }
