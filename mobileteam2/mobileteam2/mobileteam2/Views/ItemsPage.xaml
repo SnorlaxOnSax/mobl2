@@ -34,7 +34,7 @@
                                 FontSize="16"
                                 LineBreakMode="NoWrap"
                                 Style="{DynamicResource ListItemTextStyle}"
-                                Text="{Binding Text}" />
+                                Text="{Binding Number}" />
                             <Label
                                 FontSize="13"
                                 LineBreakMode="NoWrap"
