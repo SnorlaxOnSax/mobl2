@@ -20,19 +20,26 @@
         <viewModels:PaymentsViewModel />
     </ContentPage.BindingContext>
     <ContentPage.Content>
+        
         <StackLayout>
             <Label
-                
-                Text="payments info here"
+                HorizontalOptions="Center"
+                Margin="0,100,0,0"
+                Text="Deductible Payment: $500" FontSize="Large"
                 />
             
             <Button
-                    Margin="0,10,0,0"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="Center"
+                    Margin="0,100,0,100"
                     BackgroundColor="{StaticResource Primary}"
                     Clicked="OpenPayment"
                     Text="Pay Deductible"
                     TextColor="White" />
-            <Label Text="Payment History:" FontSize="Large" />
+            
+            <Label 
+                HorizontalOptions="Center"
+                Text="Payment History:" FontSize="Large"  />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
