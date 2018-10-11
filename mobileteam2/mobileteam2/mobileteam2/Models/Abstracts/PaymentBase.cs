@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace mobileteam2.Models
+namespace mobileteam2.Models.Abstracts
 {
     public abstract class PaymentBase
     {

@@ -1,12 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-
-
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="mobileteam2.Views.ItemDetailPage"
              Title="{Binding Title}">
-
-    <ContentPage.Resources>
+     <ContentPage.Resources>
         <ResourceDictionary>
             <!--  Page Level Resources: Compatibile with Xamarin Live Player  -->
             <Color x:Key="Primary">#2196F3</Color>
@@ -14,13 +11,12 @@
             <Color x:Key="LightTextColor">#999999</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
-    
     <StackLayout Spacing="20" Padding="15">
         <Label Text="Text:" FontSize="Medium" />
         <Label Text="{Binding Item.Number}" FontSize="Small"/>
         <Label Text="Description:" FontSize="Medium" />
         <Label Text="{Binding Item.Description}" FontSize="Small"/>
-        <Button
+         <Button
                     Margin="0,10,0,0"
                     BackgroundColor="{StaticResource Primary}"
                     Clicked="OpenPayment"
