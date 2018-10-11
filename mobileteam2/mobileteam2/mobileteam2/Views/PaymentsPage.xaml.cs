@@ -16,5 +16,13 @@ namespace mobileteam2.Views
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void OpenPayment(object sender, EventArgs e)
+        {
+            PaymentBtn.Text = "Paid";
+            Deductible.Text = "•Deductible paid on 10/12/18";
+            PaymentBtn.BackgroundColor = Color.Gray;
+            PaymentBtn.IsEnabled = false;
+        }
+    }
 }
