@@ -1,0 +1,2 @@
+﻿url for demo of timeline implementation
+https://www.kymphillpotts.com/xamarin-forms-layout-challenges-timeline/
