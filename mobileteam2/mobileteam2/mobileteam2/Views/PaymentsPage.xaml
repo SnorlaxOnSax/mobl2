@@ -27,19 +27,23 @@
                 Margin="0,100,0,0"
                 Text="Deductible Payment: $500" FontSize="Large"
                 />
-            
+
             <Button
-                    HorizontalOptions="CenterAndExpand"
-                    VerticalOptions="Center"
-                    Margin="0,100,0,100"
-                    BackgroundColor="{StaticResource Primary}"
-                    Clicked="OpenPayment"
-                    Text="Pay Deductible"
-                    TextColor="White" />
-            
+                 x:Name="PaymentBtn"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="Center"
+                Margin="0,100,0,100"
+                BackgroundColor="{StaticResource Primary}"
+                Clicked="OpenPayment"
+                Text="Pay Deductible"
+                TextColor="White" />
+
             <Label 
                 HorizontalOptions="Center"
                 Text="Payment History:" FontSize="Large"  />
+
+            <Label HorizontalOptions ="Center" x:Name ="Deductible" Text="" FontSize="Medium"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
