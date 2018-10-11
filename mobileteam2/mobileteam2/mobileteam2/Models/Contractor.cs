@@ -2,8 +2,7 @@
 
 namespace mobileteam2.Models
 {
-    public class Customer : Person
+    public class Contractor : PersonBase
     {
-
     }
 }
