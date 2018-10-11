@@ -4,16 +4,8 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Name="BrowseItemsPage"
-    Title="{Binding Title}">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Clicked="AddItem_Clicked" Text="Add">
-            <ToolbarItem.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="UWP" Value="add.png" />
-                </OnPlatform>
-            </ToolbarItem.Icon>
-        </ToolbarItem>
-    </ContentPage.ToolbarItems>
+    Title="Claims">
+
 
     <StackLayout>
         <ListView

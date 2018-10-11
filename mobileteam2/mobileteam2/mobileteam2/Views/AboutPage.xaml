@@ -85,10 +85,11 @@
                     </Label.FormattedText>
                 </Label>
                 <Button
+                    x:Name="btnPayme"
                     Margin="0,10,0,0"
                     BackgroundColor="{StaticResource Primary}"
-                    Command="{Binding OpenWebCommand}"
                     Clicked="testclick"
+                    Command="{Binding OpenWebCommand}"
                     Text="Learn more"
                     TextColor="White" />
             </StackLayout>
