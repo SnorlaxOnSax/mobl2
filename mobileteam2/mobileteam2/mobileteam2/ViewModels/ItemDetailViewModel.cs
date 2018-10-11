@@ -9,7 +9,7 @@ namespace mobileteam2.ViewModels
         public Claim Item { get; set; }
         public ItemDetailViewModel(Claim item = null)
         {
-            Title = item?.Description;
+            Title = "Claim Detail";
             Item = item;
         }
     }

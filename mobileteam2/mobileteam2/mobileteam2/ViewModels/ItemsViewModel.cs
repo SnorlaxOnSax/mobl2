@@ -17,7 +17,7 @@ namespace mobileteam2.ViewModels
 
         public ItemsViewModel()
         {
-            Title = "Browse";
+            Title = "Claims";
             Items = new ObservableCollection<Claim>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 

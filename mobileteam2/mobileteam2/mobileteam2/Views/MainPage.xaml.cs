@@ -17,7 +17,7 @@ namespace mobileteam2.Views
 
             MasterBehavior = MasterBehavior.Popover;
 
-            MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
+            MenuPages.Add((int)MenuItemType.Claims, (NavigationPage)Detail);
         }
 
         public async Task NavigateFromMenu(int id)
@@ -26,11 +26,20 @@ namespace mobileteam2.Views
             {
                 switch (id)
                 {
-                    case (int)MenuItemType.Browse:
+                    case (int)MenuItemType.Claims:
                         MenuPages.Add(id, new NavigationPage(new ItemsPage()));
                         break;
-                    case (int)MenuItemType.About:
-                        MenuPages.Add(id, new NavigationPage(new AboutPage()));
+                    case (int)MenuItemType.Documents:
+                        MenuPages.Add(id, new NavigationPage(new DocumentsPage()));
+                        break;
+                    case (int)MenuItemType.Payments:
+                        MenuPages.Add(id, new NavigationPage(new PaymentsPage()));
+                        break;
+                    case (int)MenuItemType.Photos:
+                        MenuPages.Add(id, new NavigationPage(new PhotosPage()));
+                        break;
+                    case (int)MenuItemType.Settings:
+                        MenuPages.Add(id, new NavigationPage(new SettingsPage()));
                         break;
                 }
             }

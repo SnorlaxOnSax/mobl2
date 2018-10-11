@@ -6,8 +6,9 @@ namespace mobileteam2.Models
 {
     public enum MenuItemType
     {
-        Browse,
-        About
+      Claims,Photos,Documents,Payments, Settings
+        
+        
     }
     public class HomeMenuItem
     {

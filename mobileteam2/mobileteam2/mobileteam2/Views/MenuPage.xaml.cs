@@ -18,8 +18,11 @@ namespace mobileteam2.Views
 
             menuItems = new List<HomeMenuItem>
             {
-                new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
-                new HomeMenuItem {Id = MenuItemType.About, Title="About" }
+                new HomeMenuItem {Id = MenuItemType.Claims, Title="Claims" },
+                new HomeMenuItem {Id = MenuItemType.Photos, Title="Photos" },
+                new HomeMenuItem {Id = MenuItemType.Documents, Title="Documents" },
+                new HomeMenuItem {Id = MenuItemType.Payments, Title="Payments" },
+                new HomeMenuItem {Id = MenuItemType.Settings, Title="Settings" }
             };
 
             ListViewMenu.ItemsSource = menuItems;
