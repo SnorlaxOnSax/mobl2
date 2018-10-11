@@ -16,5 +16,10 @@ namespace mobileteam2.Views
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void OpenPayment(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PaymentsPage());
+        }
+    }
 }

@@ -16,11 +16,9 @@
         <Label Text="{Binding Item.Number}" FontSize="Small"/>
         <Label Text="Description:" FontSize="Medium" />
         <Label Text="{Binding Item.Description}" FontSize="Small"/>
-         <Button
-                    Margin="0,10,0,0"
-                    BackgroundColor="{StaticResource Primary}"
-                    Clicked="OpenPayment"
-                    Text="Pay Deductible"
-                    TextColor="White" />
+
+       
+        
+        
     </StackLayout>
 </ContentPage>
