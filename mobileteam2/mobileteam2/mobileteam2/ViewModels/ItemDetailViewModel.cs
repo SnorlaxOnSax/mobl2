@@ -12,5 +12,7 @@ namespace mobileteam2.ViewModels
             Title = "Claim Detail";
             Item = item;
         }
+
+     
     }
 }
