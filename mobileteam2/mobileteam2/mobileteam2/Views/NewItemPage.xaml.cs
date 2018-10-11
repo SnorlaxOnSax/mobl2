@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using mobileteam2.Enums;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,15 +11,16 @@ namespace mobileteam2.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NewItemPage : ContentPage
     {
-        public Item Item { get; set; }
+        public Claim Item { get; set; }
 
         public NewItemPage()
         {
             InitializeComponent();
 
-            Item = new Item
+            Item = new Claim
             {
-                Text = "Item name",
+                Id = Guid.NewGuid().ToString(),
+                Status = ClaimStatus.Open,
                 Description = "This is an item description."
             };
 

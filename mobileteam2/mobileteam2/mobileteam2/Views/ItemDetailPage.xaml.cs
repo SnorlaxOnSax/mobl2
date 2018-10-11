@@ -1,5 +1,5 @@
 ﻿using System;
-
+using mobileteam2.Enums;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -24,9 +24,11 @@ namespace mobileteam2.Views
         {
             InitializeComponent();
 
-            var item = new Item
+           
+            var item = new Claim
             {
-                Text = "Item 1",
+                Id = Guid.NewGuid().ToString(),
+                Status = ClaimStatus.Open,
                 Description = "This is an item description."
             };
 

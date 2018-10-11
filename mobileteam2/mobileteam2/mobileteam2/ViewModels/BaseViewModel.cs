@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-
+using mobileteam2.Models;
 using Xamarin.Forms;
 
 using mobileteam2.Models;
@@ -12,7 +12,7 @@ namespace mobileteam2.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
+        public IDataStore<Claim> DataStore => DependencyService.Get<IDataStore<Claim>>() ?? (IDataStore<Claim>) new MockDataStore();
 
         bool isBusy = false;
         public bool IsBusy
