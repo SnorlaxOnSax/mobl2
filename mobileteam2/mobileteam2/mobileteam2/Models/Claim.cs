@@ -11,6 +11,7 @@ namespace mobileteam2.Models
         public string Number { get; set; }
         public ClaimStatus Status { get; set; }
         public string Description { get; set; }
+        public TimelineSteps CurrentStep { get; set; }
 
         public Claim()
         {

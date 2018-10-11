@@ -35,5 +35,10 @@ namespace mobileteam2.Views
             viewModel = new ItemDetailViewModel(item);
             BindingContext = viewModel;
         }
+
+        private void OpenPayment(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PaymentsPage());
+        }
     }
 }
