@@ -31,7 +31,7 @@ namespace mobileteam2.Views
             if (item == null)
                 return;
 
-            await Navigation.PushAsync(new ClaimDetailTabbedPage(new ItemDetailViewModel(item)));//ItemDetailPage(new ItemDetailViewModel(item)));
+            Application.Current.MainPage = new ClaimDetailTabbedPage(new ItemDetailViewModel(item));
 
             // Manually deselect item.
             ItemsListView.SelectedItem = null;

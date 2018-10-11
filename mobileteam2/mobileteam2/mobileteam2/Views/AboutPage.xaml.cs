@@ -12,5 +12,10 @@ namespace mobileteam2.Views
         {
             InitializeComponent();
         }
+
+        private void testclick(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new DocumentsPage());
+        }
     }
 }

@@ -14,7 +14,7 @@ namespace mobileteam2
             InitializeComponent();
 
 
-            MainPage = new NavigationPage(new ItemsPage());
+            MainPage = new ItemsPage();
         }
 
         protected override void OnStart()
