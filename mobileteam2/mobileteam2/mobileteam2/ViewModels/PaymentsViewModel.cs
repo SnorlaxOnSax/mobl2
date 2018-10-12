@@ -4,8 +4,10 @@ using System.Text;
 
 namespace mobileteam2.ViewModels
 {
-   public class PaymentsViewModel :BaseViewModel
+    public class PaymentsViewModel : BaseViewModel
     {
+        public object PaymentBtn { get; }
+
         public PaymentsViewModel()
         {
             Title = "Payments";
