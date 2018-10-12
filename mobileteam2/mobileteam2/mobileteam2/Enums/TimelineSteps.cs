@@ -5,11 +5,11 @@ namespace mobileteam2.Enums
 {
     public enum TimelineSteps
     {
-        [Description("Inspection")] Inspection = 1,
+        [Description("Inspection Completed")] Inspection = 1,
         [Description("Estimate Written")] EstimateWritten = 2,
-        [Description("First Payment/Documents Provided")] FirstPaymentsDocsProvided = 3,
-        [Description("Receive Workers' Comp Notification")] ReceiveWorkCompNotification = 4,
-        [Description("Final Payment")] FinalPayment = 5
+        [Description("First Payment & Documents Provided")] FirstPaymentsDocsProvided = 3,
+        [Description("Received Work Completed Notification")] ReceiveWorkCompNotification = 4,
+        [Description("Final Payment Received")] FinalPayment = 5
     }
 
     internal static class TimelineStepExtensions

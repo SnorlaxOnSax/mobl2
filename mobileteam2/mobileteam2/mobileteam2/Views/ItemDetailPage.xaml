@@ -5,9 +5,15 @@
              Title="{Binding Title}">
     <StackLayout Spacing="5" Padding="15">
         <Label Text="Claim Number" FontAttributes="Bold" FontSize="Medium" />
-        <Label Text="{Binding Item.Number}" FontSize="Small"/>
+        <Label Text="{Binding Item.Number}" FontSize="Small" Margin="0,0,0,5"/>
         <Label Text="Description" FontAttributes="Bold" FontSize="Medium" />
         <Label Text="{Binding Item.Description}" FontSize="Small"/>
+
+        <BoxView 
+            Margin="0,15,0,0" 
+            HeightRequest="3"
+            BackgroundColor="#2e7d32" />
+
         <ListView
             x:Name="TimelineListView"
             ItemsSource="{Binding Timeline.TimelineList}"
@@ -22,7 +28,14 @@
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout>
-                            <StackLayout>
+                            <StackLayout 
+                                Orientation="Horizontal"
+                                Padding="0,4,0,0">
+                                <Image
+                                    Source="{Binding Check}"
+                                    HeightRequest="30"
+                                    WidthRequest="30">
+                                </Image>
                                 <Label
                                     Margin="5,0"
                                     Text="{Binding Text}"
@@ -30,6 +43,7 @@
                             </StackLayout>
                             <BoxView
                                 IsVisible="{Binding IsNotLastStep}"
+                                Margin="13,0,0,5"
                                 BackgroundColor="#2e7d32"
                                 HorizontalOptions="Start"
                                 VerticalOptions="Fill"    
