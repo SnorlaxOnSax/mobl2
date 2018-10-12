@@ -31,7 +31,7 @@
             <Button
                 x:Name="PaymentBtn"
                 Margin="0,100,0,100"
-                BackgroundColor="{StaticResource Primary}"
+                BackgroundColor="#2E7D32"
                 Clicked="OpenPayment"
                 HorizontalOptions="CenterAndExpand"
                 Text="Pay Deductible"

@@ -16,18 +16,15 @@
                 Margin="0,100,0,100"
                 BackgroundColor="#2E7D32"
                 Clicked="DownloadEstimate"
-                
                 Text="Estimate Letter"
-                TextColor="White"
-                 />
+                TextColor="White"/>
             <Button
                 x:Name="PaymentLetterBtn"
                 Margin="0,100,0,100"
                 BackgroundColor="#2E7D32"
                 Clicked="DownloadPaymentLetter"
-                
                 Text="Payment Letter"
-                TextColor="White" />
+                TextColor="White"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
