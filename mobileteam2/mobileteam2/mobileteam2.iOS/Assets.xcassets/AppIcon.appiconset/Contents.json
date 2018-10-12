@@ -4,13 +4,13 @@
       "scale": "2x",
       "size": "20x20",
       "idiom": "iphone",
-      "filename": "Icon40.png"
+      "filename": "g_logoicon40.png"
     },
     {
       "scale": "3x",
       "size": "20x20",
       "idiom": "iphone",
-      "filename": "Icon60.png"
+      "filename": "g_logoicon60.png"
     },
     {
       "scale": "2x",
@@ -40,7 +40,7 @@
       "scale": "2x",
       "size": "60x60",
       "idiom": "iphone",
-      "filename": "Icon120.png"
+      "filename": "icon.png"
     },
     {
       "scale": "3x",
