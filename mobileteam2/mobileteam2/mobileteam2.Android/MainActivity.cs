@@ -1,7 +1,10 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Android.Views;
 using Plugin.CurrentActivity;
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.Android;
 
 namespace mobileteam2.Droid
 {
@@ -12,6 +15,9 @@ namespace mobileteam2.Droid
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
+
+            Window.AddFlags(WindowManagerFlags.DrawsSystemBarBackgrounds);
+            Window.SetStatusBarColor(Color.FromHex("#333333").ToAndroid());
 
             base.OnCreate(savedInstanceState);
             CrossCurrentActivity.Current.Init(this, savedInstanceState);
