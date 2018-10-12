@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mobileteam2.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,15 +17,13 @@ namespace mobileteam2.Views
 		{
             InitializeComponent();
 		}
-       // public static void OpenUri(Uri uri);
         private void DownloadEstimate(object sender, EventArgs e)
         {
-            EstimateBtn.BackgroundColor = Color.Gray;
-            //Device.OpenUri();
+            Navigation.PushAsync(new NavigationPage(new EstimatePage()));
         }
-        private void DownloadPaymentLetter(object sender, EventArgs e)
+        private void DownloadLetter(object sender, EventArgs e)
         {
-            PaymentLetterBtn.BackgroundColor = Color.Gray;
+            Application.Current.MainPage = (new NavigationPage(new LetterPage()));
         } 
     }
 }
