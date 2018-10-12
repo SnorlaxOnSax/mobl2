@@ -13,12 +13,6 @@
         <Label Text="{Binding Item.Number}" FontSize="Small"/>
         <Label Text="Description:" FontSize="Medium" />
         <Label Text="{Binding Item.Description}" FontSize="Small"/>
-        <Button
-            Margin="0,10,0,0"
-            BackgroundColor="{StaticResource Primary}"
-            Clicked="OpenPayment"
-            Text="Pay Deductible"
-            TextColor="White" />
         <ListView
             x:Name="TimelineListView"
             ItemTapped="TimelineListView_ItemTapped"
@@ -33,28 +27,19 @@
             <ListView.ItemTemplate>
               <DataTemplate>
                 <ViewCell>
-                  <Grid ColumnSpacing="0" RowSpacing="0">
-                    <Grid.ColumnDefinitions>
-                      <ColumnDefinition Width="30" />
-                      <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="*" />
-                    </Grid.RowDefinitions>
-                    <Label
-                      Grid.Column="1"
-                      Margin="20,0"
-                      Text="{Binding Text}" />
-
-                    <BoxView
-                      Grid.RowSpan="2"
-                      Grid.Column="0"
-                      HorizontalOptions="Center"
-                      VerticalOptions="Fill"    
-                      WidthRequest="3" />
-                  </Grid>
-                </ViewCell>
+                    <StackLayout>
+                        <StackLayout>
+                            <Label
+                                Margin="20,0"
+                                Text="{Binding Text}" />
+                            </StackLayout>
+                            <BoxView
+                                BackgroundColor="Black"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Fill"    
+                                WidthRequest="3" />
+                        </StackLayout>
+                    </ViewCell>
               </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
