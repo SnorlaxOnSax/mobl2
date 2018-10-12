@@ -36,10 +36,5 @@ namespace mobileteam2.Views
         {
             Navigation.PushAsync(new PaymentsPage());
         }
-
-        private void TimelineListView_ItemTapped(object sender, ItemTappedEventArgs e)
-        {
-            TimelineListView.SelectedItem = null;
-        }
     }
 }

@@ -3,46 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="mobileteam2.Views.ItemDetailPage"
              Title="{Binding Title}">
-     <ContentPage.Resources>
-        <ResourceDictionary>
-            <Color x:Key="Primary">#2196F3</Color>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-    <StackLayout Spacing="20" Padding="15">
-        <Label Text="Text:" FontSize="Medium" />
+    <StackLayout Spacing="5" Padding="15">
+        <Label Text="Claim Number" FontAttributes="Bold" FontSize="Medium" />
         <Label Text="{Binding Item.Number}" FontSize="Small"/>
-        <Label Text="Description:" FontSize="Medium" />
+        <Label Text="Description" FontAttributes="Bold" FontSize="Medium" />
         <Label Text="{Binding Item.Description}" FontSize="Small"/>
         <ListView
             x:Name="TimelineListView"
-            ItemTapped="TimelineListView_ItemTapped"
             ItemsSource="{Binding Timeline.TimelineList}"
-            RowHeight="75"
+            RowHeight="60"
             SeparatorVisibility="None" >
             <ListView.Header>
-                <StackLayout Padding="20,40,0,30">
-                    <Label Text="Claim Tracker" />
+                <StackLayout Padding="0,20,0,0">
+                    <Label Text="Claim Tracker" FontSize="Medium" FontAttributes="Bold" />
                 </StackLayout>
             </ListView.Header>
             <ListView.ItemTemplate>
-              <DataTemplate>
-                <ViewCell>
-                    <StackLayout>
+                <DataTemplate>
+                    <ViewCell>
                         <StackLayout>
-                            <Label
-                                Margin="20,0"
-                                Text="{Binding Text}" />
+                            <StackLayout>
+                                <Label
+                                    Margin="5,0"
+                                    Text="{Binding Text}"
+                                    FontSize="Medium"/>
                             </StackLayout>
                             <BoxView
-                                BackgroundColor="Black"
-                                HorizontalOptions="Center"
+                                IsVisible="{Binding IsNotLastStep}"
+                                BackgroundColor="#2e7d32"
+                                HorizontalOptions="Start"
                                 VerticalOptions="Fill"    
                                 WidthRequest="3" />
                         </StackLayout>
                     </ViewCell>
-              </DataTemplate>
+                </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
     </StackLayout>
 </ContentPage>

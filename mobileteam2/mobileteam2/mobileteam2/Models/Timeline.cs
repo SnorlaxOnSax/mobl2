@@ -10,11 +10,11 @@ namespace mobileteam2.Models
         {
             var timeline = new List<TimelineItem>
             {
-                new TimelineItem {Step = TimelineSteps.Inspection, Text = TimelineSteps.Inspection.GetDescription()},
-                new TimelineItem {Step = TimelineSteps.EstimateWritten, Text = TimelineSteps.EstimateWritten.GetDescription()},
-                new TimelineItem {Step = TimelineSteps.FirstPaymentsDocsProvided, Text = TimelineSteps.FirstPaymentsDocsProvided.GetDescription()},
-                new TimelineItem {Step = TimelineSteps.ReceiveWorkCompNotification, Text = TimelineSteps.ReceiveWorkCompNotification.GetDescription()},
-                new TimelineItem {Step = TimelineSteps.FinalPayment, Text = TimelineSteps.FinalPayment.GetDescription()}
+                new TimelineItem {Step = TimelineSteps.Inspection, Text = TimelineSteps.Inspection.GetDescription(), IsNotLastStep = true},
+                new TimelineItem {Step = TimelineSteps.EstimateWritten, Text = TimelineSteps.EstimateWritten.GetDescription(), IsNotLastStep = true},
+                new TimelineItem {Step = TimelineSteps.FirstPaymentsDocsProvided, Text = TimelineSteps.FirstPaymentsDocsProvided.GetDescription(), IsNotLastStep = true},
+                new TimelineItem {Step = TimelineSteps.ReceiveWorkCompNotification, Text = TimelineSteps.ReceiveWorkCompNotification.GetDescription(), IsNotLastStep = true},
+                new TimelineItem {Step = TimelineSteps.FinalPayment, Text = TimelineSteps.FinalPayment.GetDescription(), IsNotLastStep = false}
             };
             TimelineList = timeline;
 
