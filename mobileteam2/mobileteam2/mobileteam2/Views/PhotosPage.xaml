@@ -26,9 +26,9 @@
                         CachingStrategy="RecycleElement"
                         HasUnevenRows="true"
                         IsPullToRefreshEnabled="false"
+                        ItemTapped="ItemsListView_OnItemTapped"
                         ItemsSource="{Binding ImagesTaken}"
-                        VerticalOptions="FillAndExpand"
-                        ItemTapped="ItemsListView_OnItemTapped">
+                        VerticalOptions="FillAndExpand">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
