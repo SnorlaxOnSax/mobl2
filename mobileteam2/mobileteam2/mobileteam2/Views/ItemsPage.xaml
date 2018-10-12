@@ -26,13 +26,14 @@
                             <Label
                                 FontSize="16"
                                 LineBreakMode="NoWrap"
-                                Style="{DynamicResource ListItemTextStyle}"
-                                Text="{Binding Number}" />
+                                Style="{DynamicResource ListItemDetailTextStyle}"
+                                Text="{Binding Description}"
+                                FontAttributes="Bold"/>
                             <Label
                                 FontSize="13"
                                 LineBreakMode="NoWrap"
-                                Style="{DynamicResource ListItemDetailTextStyle}"
-                                Text="{Binding Description}" />
+                                Style="{DynamicResource ListItemTextStyle}"
+                                Text="{Binding Number}" />
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
