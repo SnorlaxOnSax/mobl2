@@ -29,7 +29,7 @@ namespace mobileteam2.Models
                 case PolicySymbol.PA:
                     return "Personal Auto";
                 default:
-                    return "Unsupported PolicySymbol :(";
+                    return string.Empty;
             }
         }
     }
