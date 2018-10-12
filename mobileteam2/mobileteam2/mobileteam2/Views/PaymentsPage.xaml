@@ -15,35 +15,40 @@
             <Color x:Key="LightTextColor">#999999</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
-    
+
     <ContentPage.BindingContext>
         <viewModels:PaymentsViewModel />
     </ContentPage.BindingContext>
     <ContentPage.Content>
-        
+
         <StackLayout>
             <Label
-                HorizontalOptions="Center"
                 Margin="0,100,0,0"
-                Text="Deductible Payment: $500" FontSize="Large"
-                />
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Text="Deductible Payment: $500" />
 
             <Button
-                 x:Name="PaymentBtn"
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="Center"
+                x:Name="PaymentBtn"
                 Margin="0,100,0,100"
                 BackgroundColor="{StaticResource Primary}"
                 Clicked="OpenPayment"
+                HorizontalOptions="CenterAndExpand"
                 Text="Pay Deductible"
-                TextColor="White" />
+                TextColor="White"
+                VerticalOptions="Center" />
 
-            <Label 
+            <Label
+                FontSize="Large"
                 HorizontalOptions="Center"
-                Text="Payment History:" FontSize="Large"  />
+                Text="Payment History:" />
 
-            <Label HorizontalOptions ="Center" x:Name ="Deductible" Text="" FontSize="Medium"/>
-            
+            <Label
+                x:Name="Deductible"
+                FontSize="Medium"
+                HorizontalOptions="Center"
+                Text="" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

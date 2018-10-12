@@ -25,23 +25,23 @@ namespace mobileteam2.Views
 
             var detailNav = new NavigationPage(new ItemDetailPage(viewModel));
 		    detailNav.Title = "Timeline";
-		    detailNav.BarBackgroundColor = Color.White;
+		    //detailNav.BarBackgroundColor = Color.Accent;
 		    detailNav.Icon = "timeline.png";
 
 		    var payNav = new NavigationPage(new PaymentsPage());
 		    payNav.Title = "Payments";
             payNav.Icon = "payment.png";
-		    payNav.BarBackgroundColor = Color.White;
+		   // payNav.BarBackgroundColor = Color.White;
 
 		    var photoNav =  new NavigationPage(new PhotosPage());
 		    photoNav.Title = "Photos";
             photoNav.Icon = "photos.png";
-		    photoNav.BarBackgroundColor = Color.White;
+		    //photoNav.BarBackgroundColor = Color.White;
 
 		    var docNav =  new NavigationPage(new DocumentsPage());
 		    docNav.Title = "Documents";
              docNav.Icon = "documents.png";
-		    docNav.BarBackgroundColor = Color.White;
+		    //docNav.BarBackgroundColor = Color.White;
 		   
             Children.Add(detailNav);
 		    Children.Add(payNav);
