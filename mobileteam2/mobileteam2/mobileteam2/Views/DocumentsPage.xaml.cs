@@ -19,11 +19,11 @@ namespace mobileteam2.Views
 		}
         private void DownloadEstimate(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new NavigationPage(new EstimatePage()));
+            Navigation.PushAsync(new EstimatePage());
         }
         private void DownloadLetter(object sender, EventArgs e)
         {
-            Application.Current.MainPage = (new NavigationPage(new LetterPage()));
+            Navigation.PushAsync(new LetterPage());
         } 
     }
 }

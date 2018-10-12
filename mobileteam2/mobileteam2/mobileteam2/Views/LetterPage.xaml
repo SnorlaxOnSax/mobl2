@@ -6,14 +6,10 @@
     xmlns:viewModels="clr-namespace:mobileteam2.ViewModels;assembly=mobileteam2"
     x:Name="contentLetterPage"
     Title="Payment Letter">
-    <ContentPage.BindingContext>
-        <viewModels:DocumentsViewModel />
-    </ContentPage.BindingContext>
+
     <ContentPage.Content>
         <StackLayout>
-            <Image
-                Source="Letter.PNG">
-            </Image>
+            <Image Source="Letter.PNG" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

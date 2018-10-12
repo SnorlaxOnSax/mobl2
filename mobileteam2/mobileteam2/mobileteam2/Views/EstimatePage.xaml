@@ -6,14 +6,10 @@
     xmlns:viewModels="clr-namespace:mobileteam2.ViewModels;assembly=mobileteam2"
     x:Name="contentEstimatePage"
     Title="Estimate">
-    <ContentPage.BindingContext>
-        <viewModels:DocumentsViewModel />
-    </ContentPage.BindingContext>
+
     <ContentPage.Content>
         <StackLayout>
-            <Image
-               Source="Estimate.PNG">
-            </Image>
+            <Image Source="Estimate.PNG" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
