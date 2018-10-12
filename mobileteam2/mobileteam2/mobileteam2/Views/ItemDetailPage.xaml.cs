@@ -20,7 +20,7 @@ namespace mobileteam2.Views
 
         public ItemDetailPage()
         {
-            InitializeComponent();         
+            InitializeComponent();
             var item = new Claim
             {
                 Id = Guid.NewGuid().ToString(),
@@ -35,6 +35,12 @@ namespace mobileteam2.Views
         private void OpenPayment(object sender, EventArgs e)
         {
             Navigation.PushAsync(new PaymentsPage());
+        }
+
+        private void TimelineListView_OnItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            if (e == null) return;
+            ((ListView) sender).SelectedItem = null;
         }
     }
 }

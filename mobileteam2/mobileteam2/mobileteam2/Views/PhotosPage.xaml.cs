@@ -55,5 +55,11 @@ namespace mobileteam2.Views
 	           
 	        }
         }
+
+	    private void ItemsListView_OnItemTapped(object sender, ItemTappedEventArgs e)
+	    {
+	        if (e == null) return;
+	        ((ListView)sender).SelectedItem = null;	        
+        }
 	}
 }
