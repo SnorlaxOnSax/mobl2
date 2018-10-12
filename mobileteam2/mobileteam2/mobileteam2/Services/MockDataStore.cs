@@ -16,9 +16,9 @@ namespace mobileteam2.Services
             items = new List<Claim>();
             var mockItems = new List<Claim>
             {
-                new Claim { Id = Guid.NewGuid().ToString(), Number = "HM1002003", Status = ClaimStatus.Open, Description="Your homeowner's claim.", CurrentStep = TimelineSteps.FirstPaymentsDocsProvided},
-                new Claim { Id = Guid.NewGuid().ToString(), Number = "PA8675309", Status = ClaimStatus.Open, Description="Your personal auto claim.", CurrentStep = TimelineSteps.Inspection},
-                new Claim { Id = Guid.NewGuid().ToString(), Number = "TH3245991", Status = ClaimStatus.Open, Description="Your homeowner's claim.", CurrentStep = TimelineSteps.FinalPayment},
+                new Claim { Id = Guid.NewGuid().ToString(), Number = "HP0008675309", Status = ClaimStatus.Open, Description="Your homeowner's claim.", CurrentStep = TimelineSteps.FirstPaymentsDocsProvided},
+                new Claim { Id = Guid.NewGuid().ToString(), Number = "APV001234567", Status = ClaimStatus.Open, Description="Your personal auto claim.", CurrentStep = TimelineSteps.Inspection},
+                new Claim { Id = Guid.NewGuid().ToString(), Number = "HP0004444444", Status = ClaimStatus.Open, Description="Your homeowner's claim.", CurrentStep = TimelineSteps.FinalPayment},
             };
 
             foreach (var item in mockItems)
