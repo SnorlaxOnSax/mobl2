@@ -1,5 +1,6 @@
 ﻿using mobileteam2.ViewModels;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 using Xamarin.Forms.Xaml;
 using Application = Xamarin.Forms.Application;
@@ -12,34 +13,35 @@ namespace mobileteam2.Views
 	{
 		public ClaimDetailTabbedPage (ItemDetailViewModel viewModel)
 		{
-			InitializeComponent ();
-		    ToolbarItems.Add(new ToolbarItem("Home", "icon.png", async () =>
+			InitializeComponent();
+		    ToolbarItems.Add(new ToolbarItem("Home", "home.png", async () =>
 		    {
-		       //await Navigation.PopToRootAsync();
-		        Application.Current.MainPage = new ItemsPage();
-
+		        Application.Current.MainPage = new NavigationPage(new ItemsPage());
 
             }));
 
             On<Xamarin.Forms.PlatformConfiguration.Android>().SetToolbarPlacement(ToolbarPlacement.Bottom);
+		    
 
-		    var detailNav = new NavigationPage(new ItemDetailPage(viewModel));
+            var detailNav = new NavigationPage(new ItemDetailPage(viewModel));
 		    detailNav.Title = "Timeline";
+		    //detailNav.BarBackgroundColor = Color.Accent;
+		    detailNav.Icon = "timeline.png";
 
 		    var payNav = new NavigationPage(new PaymentsPage());
 		    payNav.Title = "Payments";
-		    //payNav.Icon = "tab_policies.png";
-		   // policyNav.BarBackgroundColor = Color.White;
+            payNav.Icon = "payment.png";
+		   // payNav.BarBackgroundColor = Color.White;
 
 		    var photoNav =  new NavigationPage(new PhotosPage());
 		    photoNav.Title = "Photos";
-		    //photoNav.Icon = "tab_billing.png";
-		    //billingNav.BarBackgroundColor = Color.White;
+            photoNav.Icon = "photos.png";
+		    //photoNav.BarBackgroundColor = Color.White;
 
 		    var docNav =  new NavigationPage(new DocumentsPage());
 		    docNav.Title = "Documents";
-		   // docNav.Icon = "tab_claims.png";
-		    //claimsNav.BarBackgroundColor = Color.White;
+             docNav.Icon = "documents.png";
+		    //docNav.BarBackgroundColor = Color.White;
 		   
             Children.Add(detailNav);
 		    Children.Add(payNav);
@@ -49,3 +51,5 @@ namespace mobileteam2.Views
         }
     }
 }
+//androidSpecific:TabbedPage.BarItemColor="#737577"
+//androidSpecific:TabbedPage.BarSelectedItemColor="LawnGreen"

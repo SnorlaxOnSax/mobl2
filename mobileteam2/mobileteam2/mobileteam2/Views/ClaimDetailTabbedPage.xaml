@@ -3,5 +3,9 @@
     x:Class="mobileteam2.Views.ClaimDetailTabbedPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:androidSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
     Title="{Binding Title}"
+    androidSpecific:TabbedPage.BarItemColor="#737577"
+    androidSpecific:TabbedPage.BarSelectedItemColor="#009848"
+    BarBackgroundColor="White"
     NavigationPage.BackButtonTitle="Back" />

@@ -16,6 +16,7 @@ namespace mobileteam2.Views
         private void testclick(object sender, EventArgs e)
         {
             Navigation.PushAsync(new DocumentsPage());
+            btnPayme.BackgroundColor = Color.Green;
         }
     }
 }
