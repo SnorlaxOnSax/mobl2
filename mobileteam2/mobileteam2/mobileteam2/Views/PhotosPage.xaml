@@ -49,7 +49,7 @@
                         x:Name="btnAddPhoto"
                         Grid.Row="1"
                         Margin="0,10,0,0"
-                        BackgroundColor="#2196F3"
+                        BackgroundColor="#2E7D32"
                         Clicked="TakePhotoClicked"
                         Text="+ add photo"
                         TextColor="White" />
