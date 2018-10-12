@@ -27,7 +27,8 @@
                         HasUnevenRows="true"
                         IsPullToRefreshEnabled="false"
                         ItemsSource="{Binding ImagesTaken}"
-                        VerticalOptions="FillAndExpand">
+                        VerticalOptions="FillAndExpand"
+                        ItemTapped="ItemsListView_OnItemTapped">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>

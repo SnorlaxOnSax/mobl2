@@ -18,7 +18,8 @@
             x:Name="TimelineListView"
             ItemsSource="{Binding Timeline.TimelineList}"
             RowHeight="60"
-            SeparatorVisibility="None" >
+            SeparatorVisibility="None" 
+            ItemTapped="TimelineListView_OnItemTapped">
             <ListView.Header>
                 <StackLayout Padding="0,20,0,0">
                     <Label Text="Claim Tracker" FontSize="Medium" FontAttributes="Bold" />
