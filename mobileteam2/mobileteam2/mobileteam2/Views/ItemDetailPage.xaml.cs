@@ -2,29 +2,25 @@
 using mobileteam2.Enums;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
 using mobileteam2.Models;
 using mobileteam2.ViewModels;
 
 namespace mobileteam2.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ItemDetailPage : ContentPage
+    public partial class ItemDetailPage
     {
         ItemDetailViewModel viewModel;
 
         public ItemDetailPage(ItemDetailViewModel viewModel)
         {
             InitializeComponent();
-
             BindingContext = this.viewModel = viewModel;
         }
 
         public ItemDetailPage()
         {
-            InitializeComponent();
-
-           
+            InitializeComponent();         
             var item = new Claim
             {
                 Id = Guid.NewGuid().ToString(),
@@ -39,6 +35,11 @@ namespace mobileteam2.Views
         private void OpenPayment(object sender, EventArgs e)
         {
             Navigation.PushAsync(new PaymentsPage());
+        }
+
+        private void TimelineListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            TimelineListView.SelectedItem = null;
         }
     }
 }

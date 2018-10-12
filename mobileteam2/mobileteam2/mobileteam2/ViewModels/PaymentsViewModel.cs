@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Xamarin.Forms;
 
 namespace mobileteam2.ViewModels
 {
@@ -11,6 +12,7 @@ namespace mobileteam2.ViewModels
         public PaymentsViewModel()
         {
             Title = "Payments";
+            var isDeductiblePaid = (Application.Current as App).IsDeductiblePaid;
         }
     }
 }
