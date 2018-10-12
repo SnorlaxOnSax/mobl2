@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mobileteam2.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,17 +13,37 @@ namespace mobileteam2.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PaymentsPage : ContentPage
 	{
+        private PaymentsViewModel paymentPaymentViewModel;
 		public PaymentsPage ()
 		{
+            paymentPaymentViewModel = new PaymentsViewModel();
 			InitializeComponent ();
-		}
+
+            if (paymentPaymentViewModel.isDeductiblePaid == true)
+            {
+                PaymentBtn.Text = "Paid";
+                Deductible.Text = "•Deductible paid on 10/12/18";
+                PaymentBtn.IsEnabled = false;
+                PaymentBtn.BackgroundColor = Color.Gray;
+            }
+
+            else
+            {
+                PaymentBtn.IsEnabled = true;
+                PaymentBtn.BackgroundColor = Color.Blue;
+            }
+        }
 
         private void OpenPayment(object sender, EventArgs e)
         {
             PaymentBtn.Text = "Paid";
             Deductible.Text = "•Deductible paid on 10/12/18";
             PaymentBtn.BackgroundColor = Color.Gray;
-            PaymentBtn.IsEnabled = false;
+            PaymentBtn.IsEnabled = !paymentPaymentViewModel.isDeductiblePaid;
+                if (paymentPaymentViewModel.isDeductiblePaid == false)
+                 {
+                    (Application.Current as App).IsDeductiblePaid = true;
+                 }
         }
     }
 }

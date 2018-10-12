@@ -12,7 +12,9 @@ namespace mobileteam2.ViewModels
         public PaymentsViewModel()
         {
             Title = "Payments";
-            var isDeductiblePaid = (Application.Current as App).IsDeductiblePaid;
+            isDeductiblePaid = (Application.Current as App).IsDeductiblePaid;
         }
+
+        public bool isDeductiblePaid { get; set; }
     }
 }
