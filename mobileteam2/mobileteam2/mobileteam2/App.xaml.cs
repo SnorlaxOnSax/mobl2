@@ -8,12 +8,12 @@ namespace mobileteam2
 {
     public partial class App : Application
     {
+        public bool IsDeductiblePaid { get; set; }
 
         public App()
         {
+            IsDeductiblePaid = false;
             InitializeComponent();
-
-
             MainPage = new NavigationPage(new ItemsPage());
         }
 
