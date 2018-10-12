@@ -13,7 +13,7 @@
         <StackLayout>
             <Label
                 HorizontalOptions="CenterAndExpand"
-                Text="Photos of completed work"
+                Text="Add 4-6 photos of completed work."
                 VerticalOptions="CenterAndExpand" />
             <StackLayout>
                 <Grid>
