@@ -7,7 +7,18 @@
         <Label Text="Claim Number" FontAttributes="Bold" FontSize="Medium" />
         <Label Text="{Binding Item.Number}" FontSize="Small" Margin="0,0,0,5"/>
         <Label Text="Description" FontAttributes="Bold" FontSize="Medium" />
-        <Label Text="{Binding Item.Description}" FontSize="Small"/>
+
+        <StackLayout Orientation="Horizontal">
+            <Entry 
+                IsVisible="{Binding isEditingDescription}" 
+                Text="{Binding Item.Description}" 
+                Placeholder="{Binding Item.Description}"/>
+            <Image
+                Source="edit.png"
+                HeightRequest="30"
+                WidthRequest="30">
+            </Image>
+        </StackLayout>
 
         <BoxView 
             Margin="0,15,0,0" 
