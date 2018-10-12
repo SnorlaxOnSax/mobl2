@@ -11,10 +11,24 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
-            <Label
+            <Button
+                x:Name="EstimateBtn"
+                Margin="0,100,0,100"
+                BackgroundColor="{StaticResource Primary}"
+                Clicked="DownloadEstimate"
                 HorizontalOptions="CenterAndExpand"
-                Text="display documents here"
-                VerticalOptions="CenterAndExpand" />
+                Text="Estimate Letter"
+                TextColor="White"
+                VerticalOptions="Center" />
+            <Button
+                x:Name="PaymentLetterBtn"
+                Margin="0,100,0,100"
+                BackgroundColor="{StaticResource Primary}"
+                Clicked="DownloadPaymentLetter"
+                HorizontalOptions="CenterAndExpand"
+                Text="Payment Letter"
+                TextColor="White"
+                VerticalOptions="Center" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -16,5 +16,20 @@ namespace mobileteam2.Views
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void EstimateBtn_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DownloadEstimate(object sender, EventArgs e)
+        {
+            
+        }
+        private void DownloadPaymentLetter(object sender, EventArgs e)
+        {
+
+        } 
+
+    }
 }
