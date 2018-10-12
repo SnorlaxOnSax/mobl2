@@ -41,7 +41,10 @@ namespace mobileteam2.Views
 	            var file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
 	            {
 	                Directory = "Sample",
-	                Name = "test.jpg"
+	                Name = "test.jpg",
+                    PhotoSize = PhotoSize.Medium,
+                    CompressionQuality = 92
+
 	            });
 	            photoPhotoViewModel.ImagesTaken.Add(new MyImage{ImagePath = file.Path});
 	            ItemsListView.ItemsSource = null;
