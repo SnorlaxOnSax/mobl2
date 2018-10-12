@@ -16,5 +16,15 @@ namespace mobileteam2.Views
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void DownloadEstimate(object sender, EventArgs e)
+        {
+            EstimateBtn.BackgroundColor = Color.Gray;
+        }
+        private void DownloadPaymentLetter(object sender, EventArgs e)
+        {
+            PaymentLetterBtn.BackgroundColor = Color.Gray;
+        } 
+
+    }
 }
