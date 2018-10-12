@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "120872622536",
+    "firebase_url": "https://hackathon-grange-claims.firebaseio.com",
+    "project_id": "hackathon-grange-claims",
+    "storage_bucket": "hackathon-grange-claims.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120872622536:android:2f19046f988e4d3e",
+        "android_client_info": {
+          "package_name": "com.grangeclaims.mobileteam2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120872622536-kg1uspv88s9bdhjneedc8ujou3vu1qio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyConDRibuSgbv_1WwG6KoTp61WL_bCOUkg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
