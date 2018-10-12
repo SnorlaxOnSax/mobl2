@@ -20,7 +20,7 @@
         <viewModels:PaymentsViewModel />
     </ContentPage.BindingContext>
     <ContentPage.Content>
-        
+
         <StackLayout>
             <Label
                 Margin="0,100,0,0"
