@@ -14,7 +14,7 @@ namespace mobileteam2.Views
 		public ClaimDetailTabbedPage (ItemDetailViewModel viewModel)
 		{
 			InitializeComponent();
-		    ToolbarItems.Add(new ToolbarItem("Home", "icon.png", async () =>
+		    ToolbarItems.Add(new ToolbarItem("Home", "home.png", async () =>
 		    {
 		        Application.Current.MainPage = new NavigationPage(new ItemsPage());
 
