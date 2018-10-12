@@ -5,12 +5,16 @@ using Xamarin.Forms;
 
 namespace mobileteam2.ViewModels
 {
-   public class PaymentsViewModel :BaseViewModel
+    public class PaymentsViewModel : BaseViewModel
     {
+        public object PaymentBtn { get; }
+
         public PaymentsViewModel()
         {
             Title = "Payments";
-            var isDeductiblePaid = (Application.Current as App).IsDeductiblePaid;
+            isDeductiblePaid = (Application.Current as App).IsDeductiblePaid;
         }
+
+        public bool isDeductiblePaid { get; set; }
     }
 }

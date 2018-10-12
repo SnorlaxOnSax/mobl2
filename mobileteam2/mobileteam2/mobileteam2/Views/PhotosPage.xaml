@@ -13,8 +13,52 @@
         <StackLayout>
             <Label
                 HorizontalOptions="CenterAndExpand"
-                Text="Welcome to Xamarin.Forms!"
+                Text="Photos of completed work"
                 VerticalOptions="CenterAndExpand" />
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <ListView
+                        x:Name="ItemsListView"
+                        CachingStrategy="RecycleElement"
+                        HasUnevenRows="true"
+                        IsPullToRefreshEnabled="false"
+                        ItemsSource="{Binding ImagesTaken}"
+                        VerticalOptions="FillAndExpand">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <FlexLayout
+                                        Padding="5"
+                                        JustifyContent="SpaceAround"
+                                        Wrap="Wrap">
+                                        <Image
+                                            HeightRequest="150"
+                                            Source="{Binding ImagePath}"
+                                            WidthRequest="150" />
+                                    </FlexLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                    <Button
+                        x:Name="btnAddPhoto"
+                        Grid.Row="1"
+                        Margin="0,10,0,0"
+                        BackgroundColor="#2196F3"
+                        Clicked="TakePhotoClicked"
+                        Text="+ add photo"
+                        TextColor="White" />
+                </Grid>
+
+
+
+            </StackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
